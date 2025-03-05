@@ -24,7 +24,7 @@ class RewardLevel extends StatelessWidget {
             children: [
               SizedBox(height: 20), // Adds spacing
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
                       onTap: () {
@@ -104,7 +104,7 @@ class RwardCard extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: .5, left: .3),
+              padding: const EdgeInsets.only(bottom: .5, left: .5, right: .5),
               child: Container(
                 height: 137,
                 width: 342,

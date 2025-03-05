@@ -73,50 +73,56 @@ class HomeContentScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.only(left: 20.0, right: 20, top: 15),
+          padding: const EdgeInsets.only(left: 10.0, right: 10, top: 15),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Row(
-                mainAxisAlignment:
-                    MainAxisAlignment.spaceBetween, // Adjust spacing
-                children: [
-                  // Profile Section
-                  Row(
-                    children: [
-                      Image.asset(
-                        "assets/profile.png",
-                        height: 30,
-                        width: 30,
-                      ),
-                      const SizedBox(width: 8), // Add spacing
-                      Text(
-                        "John Doe",
-                        style: TextStyle(fontSize: 14),
-                      ),
-                      SizedBox(
-                        width: 60,
-                      ),
-                      Image.asset(
-                        "assets/medal.png",
-                        height: 25,
-                        width: 25,
-                      ),
-                      const SizedBox(width: 5),
-                      Text("Level 01"),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Image.asset(
-                        "assets/wallet.png",
-                        height: 20,
-                        width: 20,
-                      ),
-                      const SizedBox(width: 5),
-                      Text("\$25.00"),
-                    ],
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // Profile Section
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/profile.png",
+                          height: 30,
+                          width: 30,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          "John Doe",
+                          style: TextStyle(fontSize: 14),
+                        ),
+                        // SizedBox(
+                        //   width: 60,
+                        // ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/medal.png",
+                          height: 25,
+                          width: 25,
+                        ),
+                        // const SizedBox(width: 5),
+                        Text("Level 01"),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Image.asset(
+                          "assets/wallet.png",
+                          height: 20,
+                          width: 20,
+                        ),
+                        const SizedBox(width: 5),
+                        Text("\$25.00"),
+                      ],
+                    )
+                  ],
+                ),
               ),
               SizedBox(
                 height: 62,
